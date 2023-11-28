@@ -34,7 +34,7 @@ AMAP_KEY='3b58693195d9d3142a8bc1e885edd241'
 不配置,使用默认路径,在项目目录中;如果需要配置,你自己应该也会配置路径
 例如： CREDENTIALS_PATH = './myConfig/credentials'
 '''
-CREDENTIALS_PATH = None
+CREDENTIALS_PATH = './myConfig'
 
 
 '''
