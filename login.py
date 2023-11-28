@@ -64,12 +64,15 @@ if __name__ == '__main__':
         if mobile not in sections:
             config.add_section(mobile)  # 首先添加一个新的section
 
-        config.set(mobile, 'province', str(province))
-        config.set(mobile, 'city', str(city))
-        config.set(mobile, 'token', str(token))
-        config.set(mobile, 'userId', str(userId))
-        config.set(mobile, 'lat', location.split(',')[1])
-        config.set(mobile, 'lng', location.split(',')[0])
+        config.set(encrypt_mobile, 'hidemobile', '184****3347')
+        config.set(encrypt_mobile, 'enddate', '20231227')
+        config.set(encrypt_mobile, 'userid', '9ufPnN8iS3b5KAkQqWP16g==')
+        config.set(encrypt_mobile, 'province', '北京市')
+        config.set(encrypt_mobile, 'city', '北京市')
+        config.set(encrypt_mobile, 'token', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtdCIsImV4cCI6MTcwMzY3NjMyMCwidXNlcklkIjoxMTE0OTIwNjI5LCJkZXZpY2VJZCI6IjJGMjA3NUQwLUI2NkMtNDI4Ny1BOTAzLURCRkY2MzU4MzQyQSIsImlhdCI6MTcwMTA4NDMyMH0.R1qYcXq9zqdaOyVZuzE2RFFhHCloVyyvVm087GuyZgU')
+
+        config.set(encrypt_mobile, 'lat', '39.969884')
+        config.set(encrypt_mobile, 'lng', '116.404061')
         config.write(open(path, 'w+'))  # 保存数据
         condition = input(f"是否继续添加账号[Y/N]:").lstrip().rstrip()
         condition = condition.lower()
